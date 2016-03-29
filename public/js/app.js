@@ -9,13 +9,12 @@
 	});
 */
 
-
 	var PostModel = Backbone.Model.extend({
 		urlRoot: '/api/posts/',
 		idAttribute: 'id',
 	});
 
-var post = new PostModel();
+	var post = new PostModel();
 
 /*	var SubbredditModel = Backbone.Model.extend({
 		urlRoot: '/api/subbreddits/',
