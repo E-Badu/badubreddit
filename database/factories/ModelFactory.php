@@ -14,8 +14,27 @@
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
-        'email' => $faker->safeEmail,
+        'email' => $faker->email,
         'password' => bcrypt(str_random(10)),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(App\Subbreddit::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->unique()->word,
+        'description' => $faker->text
+    ];
+});
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
+    return [
+        'url' => $faker->url,
+        'title' => $faker->sentence,
+        'content' => $faker->text
+    ];
+});
+$factory->define(App\Comment::class, function (Faker\Generator $faker) {
+    return [
+        'content' => $faker->text,
     ];
 });
