@@ -42,10 +42,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
-    <!-- <script src="{{ asset('js/app.js') }}"></script>-->
-    <script> // All here should be in app.js, but errors keep happening.
+    <script src="{{ asset('js/app.js') }}"></script>
+   <!-- <script> // All here should be in app.js, but errors keep happening.
     
-$.ajaxSetup({
+ $.ajaxSetup({ 
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
@@ -178,7 +178,7 @@ $.ajaxSetup({
     var homeView = new HomeView();
     $('#content').html(homeView.render().el);
 
-    </script>
+    </script> -->
 
 </body>
 </html>
