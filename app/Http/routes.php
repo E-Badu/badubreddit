@@ -14,10 +14,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*if (env('APP_DEBUG')) {
+if (env('APP_DEBUG')) {
     // Route to view logs. Only for use in development
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
-}*/
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ Route::get('/', function () {
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    // this is where our app lives -kevin 
+    // this is where our app lives 
     Route::get('/home', 'HomeController@index');
 
     Route::group(['prefix' => 'api'], function () {
