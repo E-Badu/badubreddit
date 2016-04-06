@@ -15,7 +15,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return \App\Post::with('subbreddit')->orderBy('id', 'desc')->get();
+        return \App\Post::with('subbreddits')->orderBy('id', 'desc')->get();
     }
 
     /**
