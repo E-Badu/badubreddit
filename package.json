@@ -13,5 +13,10 @@
     "foundation-sites": "^6.2.1",
     "jquery": "^2.2.3",
     "underscore": "^1.8.3"
+  },
+
+
+  "scripts": {
+    "develop": "./node_modules/.bin/gulp"
   }
 }
